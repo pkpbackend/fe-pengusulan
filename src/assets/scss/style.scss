@@ -1,0 +1,36 @@
+@import "../../@core/scss/base/bootstrap-extended/include";
+
+.text-accent {
+  color: hsl(var(--bs-secondary));
+}
+
+.spinner-grow {
+  background-color: hsl(var(--bs-primary));
+}
+.swal2-actions button {
+  margin: 0.3125em !important;
+}
+
+.filter-actions {
+  display: block;
+  button {
+    width: 100%;
+  }
+  button:first-child {
+    margin-bottom: 1rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .filter-actions {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      width: auto;
+    }
+    button:first-child {
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+  }
+}

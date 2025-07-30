@@ -1,0 +1,119 @@
+@import "src/@core/scss/base/bootstrap-extended/_include";
+
+.steps-container {
+  background-color: #fff;
+  padding: 2rem 12vw;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.steps-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.step-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.75rem;
+  overflow: hidden;
+  padding-top: 1rem;
+  position: relative;
+  margin-left: -30px;
+  &:last-child {
+    flex: inherit;
+  }
+}
+
+.step-item-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  width: 120px;
+}
+.step-item-icon {
+  border-radius: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  color: #000000;
+  border: 1.5px solid #c6c6c6;
+  position: relative;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+.step-item-tail {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 999px;
+  margin-inline-start: 45px;
+
+  &::after {
+    display: inline-block;
+    width: 100%;
+    height: 1.5px;
+    background: #c6c6c6;
+    content: "";
+  }
+}
+.step-item-title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.74px;
+  color: #6f6f6f;
+  text-align: center;
+  line-height: 1.25rem;
+}
+
+.step-finish {
+  color: hsl(var(--bs-primary));
+  padding-left: 4px;
+  .step-item-tail {
+    top: 50%;
+    margin-inline-start: 48px;
+    &::after {
+      background: hsl(var(--bs-primary));
+    }
+  }
+  .step-item-icon {
+    border-radius: 100%;
+    padding: 1rem;
+    background-color: hsl(var(--bs-primary));
+    color: #fff;
+    border: hsl(var(--bs-primary));
+    position: relative;
+    &::before {
+      content: "";
+      background-color: transparent;
+      border: 1.5px solid hsl(var(--bs-primary));
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      transform: scale(1.175);
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+    }
+    &::after {
+      inset-inline-start: 110%;
+      background: hsl(var(--bs-primary));
+    }
+  }
+  .step-item-title {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.74px;
+    color: hsl(var(--bs-primary));
+  }
+}

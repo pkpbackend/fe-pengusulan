@@ -1,0 +1,21 @@
+@import "src/@core/scss/base/bootstrap-extended/include";
+
+.row-head {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f6f6f9 !important;
+}
+
+td {
+  padding: 0.5rem 1rem !important;
+  font-size: 12px;
+}
+
+@include media-breakpoint-up(md) {
+  td {
+    font-size: 13px;
+  }
+  .row-head {
+    font-size: 13px;
+  }
+}

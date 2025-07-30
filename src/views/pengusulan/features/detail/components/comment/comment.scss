@@ -1,0 +1,33 @@
+.comments-wrapper {
+  margin-bottom: 2rem;
+}
+.comment-item-wrapper {
+  margin-bottom: 1.5rem;
+}
+.comment-item {
+  display: flex;
+  align-items: center;
+}
+.comment-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
+.comment-item-title {
+  margin-left: 0.5rem;
+  font-weight: 500;
+  line-height: 12px;
+}
+.comment-item-date {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.comment-item-description {
+  margin-left: 40px;
+  margin-top: 6px;
+  padding: 1rem;
+  border-radius: 0 6px 6px 6px;
+  border: 1px solid #d8d6de;
+}
